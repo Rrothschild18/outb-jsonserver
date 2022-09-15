@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Rrothschild18/outb-jsonserver#readme",
   "devDependencies": {
     "json-server": "^0.17.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
   }
 }
