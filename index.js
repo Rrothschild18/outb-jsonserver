@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 const jsonServer = require("json-server");
-const routes = jsonServer.router("outb.json");
+const routes = jsonServer.router();
 const middlewares = jsonServer.defaults();
 
 app.use(routes);
