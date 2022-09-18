@@ -1,4 +1,71 @@
 {
+  "patientsSISTB": [
+    {
+      "name": "Jose",
+      "TIPO_CASO": "NOVO",
+      "id": 1
+    },
+    {
+      "name": "Raul",
+      "TIPO_CASO": "RECIDIVA",
+      "id": 2
+    },
+    {
+      "name": "Maria",
+      "TIPO_CASO": "RETRATAMENTO ABANDONO",
+      "id": 3
+    },
+    {
+      "name": "Maria",
+      "TIPO_CASO": "RETRATAMENTO ABANDONO",
+      "id": 4
+    },
+    {
+      "name": "Maria",
+      "TIPO_CASO": "RETRATAMENTO ABANDONO",
+      "id": 5
+    },
+    {
+      "name": "Felipe",
+      "TIPO_CASO": "NOVO",
+      "id": 6
+    },
+    {
+      "name": "Felipe",
+      "TIPO_CASO": "NOVO",
+      "id": 7
+    },
+    {
+      "name": "Santiago",
+      "TIPO_CASO": "NOVO",
+      "id": 8
+    },
+    {
+      "name": "Amadeu",
+      "TIPO_CASO": "RETRATAMENTO ABANDONO",
+      "id": 9
+    },
+    {
+      "name": "Marcia",
+      "TIPO_CASO": "RETRATAMENTO ABANDONO",
+      "id": 10
+    },
+    {
+      "name": "Jose",
+      "TIPO_CASO": "NOVO",
+      "id": 11
+    },
+    {
+      "name": "Tiago",
+      "TIPO_CASO": "RETRATAMENTO APOS MUDANÇA DE ESQUEMA INT/TOX",
+      "id": 12
+    },
+    {
+      "name": "Ines Maria",
+      "TIPO_CASO": "RETRATAMENTO APOS FALENCIA/RESISTENCIA",
+      "id": 13
+    }
+  ],
   "patients": [
     {
       "name": "RAUL TONELLO ROTHSCHILDD",
@@ -738,7 +805,7 @@
       },
       "TIPO_OCUPACAO": {
         "name": "TIPO_OCUPACAO",
-        "label": "Qual o tipo da profissão que exerce (geral)",
+        "label": "Profissão",
         "type": "select",
         "options": [
           {
@@ -770,7 +837,7 @@
             "value": "PROFISSIONAL DE SAÚDE"
           },
           {
-            "label": "Profissional sistema penitenciário",
+            "label": "Profissional penitenciário",
             "value": "PROFISSIONAL SISTEMA PENITENCIARIO"
           },
           {
@@ -841,7 +908,7 @@
       "IDADE": {
         "name": "IDADE",
         "label": "Idade",
-        "type": "text"
+        "type": "number"
       },
       "MUNICIPIO_RESIDENCIA": {
         "name": "MUNICIPIO_RESIDENCIA",
@@ -926,7 +993,7 @@
       },
       "GESTANTE": {
         "name": "GESTANTE",
-        "label": "Informação sobre a possibilidade de ser gestante",
+        "label": "Gestante",
         "type": "select",
         "options": [
           {
@@ -1833,7 +1900,7 @@
       },
       "MOTIVO_MUDANCA_ESQUEMA": {
         "name": "MOTIVO_MUDANCA_ESQUEMA",
-        "label": "No caso de haver mudança, qual o motivo",
+        "label": "Principal motivo",
         "type": "select",
         "options": [
           {
