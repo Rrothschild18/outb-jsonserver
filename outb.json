@@ -2,73 +2,88 @@
   "patientsSISTB": [
     {
       "name": "Jose",
+      "formId": "3MOQL",
       "TIPO_CASO": "NOVO",
       "id": 1
     },
     {
       "name": "Raul",
+      "formId": "3MOQL",
       "TIPO_CASO": "RECIDIVA",
       "id": 2
     },
     {
       "name": "Maria",
+      "formId": "3MOQL",
       "TIPO_CASO": "RETRATAMENTO ABANDONO",
       "id": 3
     },
     {
       "name": "Maria",
+      "formId": "3MOQL",
       "TIPO_CASO": "RETRATAMENTO ABANDONO",
       "id": 4
     },
     {
       "name": "Maria",
+      "formId": "3MOQL",
       "TIPO_CASO": "RETRATAMENTO ABANDONO",
       "id": 5
     },
     {
       "name": "Felipe",
+      "formId": "3MOQL",
       "TIPO_CASO": "NOVO",
       "id": 6
     },
     {
       "name": "Felipe",
+      "formId": "3MOQL",
       "TIPO_CASO": "NOVO",
       "id": 7
     },
     {
       "name": "Santiago",
+      "formId": "3MOQL",
       "TIPO_CASO": "NOVO",
       "id": 8
     },
     {
       "name": "Amadeu",
+      "formId": "3MOQL",
       "TIPO_CASO": "RETRATAMENTO ABANDONO",
       "id": 9
     },
     {
       "name": "Marcia",
+      "formId": "3MOQL",
       "TIPO_CASO": "RETRATAMENTO ABANDONO",
       "id": 10
     },
     {
       "name": "Jose",
+      "formId": "3MOQL",
       "TIPO_CASO": "NOVO",
       "id": 11
     },
     {
       "name": "Tiago",
+      "formId": "3MOQL",
       "TIPO_CASO": "RETRATAMENTO APOS MUDANÇA DE ESQUEMA INT/TOX",
       "id": 12
     },
     {
       "name": "Ines Maria",
+      "formId": "3MOQL",
       "TIPO_CASO": "RETRATAMENTO APOS FALENCIA/RESISTENCIA",
       "id": 13
     }
   ],
+
   "patients": [
     {
       "name": "RAUL TONELLO ROTHSCHILDD",
+      "formId": "3MOQL",
       "TIPO_OCUPACAO": "PROFISSIONAL",
       "RACA_COR": "Branco",
       "SEXO": "M",
@@ -110,6 +125,7 @@
     },
     {
       "name": "Noan Henrique Ferraz",
+      "formId": "3MOQL",
       "TIPO_OCUPACAO": "DETENTO",
       "RACA_COR": "Pardo",
       "SEXO": "M",
@@ -158,6 +174,7 @@
       "TABAGISMO": true,
       "ESQUEMA_INICIAL": "MR",
       "name": "primo da suleima",
+      "formId": "3MOQL",
       "TIPO_OCUPACAO": "APOSENTADO",
       "CODIGO_TRATAMENTO_ANTERIOR": "2",
       "IDADE": "24",
@@ -296,6 +313,7 @@
       "id": "ol1KUzh"
     }
   ],
+
   "status": [
     {
       "id": "F-M6tI-Wj",
@@ -796,6 +814,7 @@
       "nextStatusId": null
     }
   ],
+
   "patientFields": {
     "fields": {
       "name": {
@@ -2104,5 +2123,1497 @@
         ]
       }
     }
-  }
+  },
+
+  "algorithm": [
+    {
+      "name": "Desfechos",
+      "form": "3MOQL",
+      "createdAt": "18/08/2022"
+    }
+  ],
+
+  "inputs": [
+    {
+      "id": "VC9JH",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "name",
+      "label": "Nome",
+      "type": "text"
+    },
+    {
+      "id": "J3O6A",
+      "name": "TIPO_OCUPACAO",
+      "formId": ["3MOQL", "ZU6C0"],
+      "label": "Profissão",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "Aposentado",
+          "value": "APOSENTADO"
+        },
+        {
+          "label": "Detento",
+          "value": "DETENTO"
+        },
+        {
+          "label": "Dona de casa",
+          "value": "DONA DE CASA"
+        },
+        {
+          "label": "Desempregado",
+          "value": "DESEMPREGADO"
+        },
+        {
+          "label": "Profissional",
+          "value": "PROFISSIONAL"
+        },
+        {
+          "label": "Profissional de saúde",
+          "value": "PROFISSIONAL DE SAÚDE"
+        },
+        {
+          "label": "Profissional penitenciário",
+          "value": "PROFISSIONAL SISTEMA PENITENCIARIO"
+        },
+        {
+          "label": "Outra",
+          "value": "OUTRA"
+        }
+      ]
+    },
+    {
+      "id": "9IB25",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "FAIXA_ETARIA",
+      "label": "Faixa de idade",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "Menor de 1 ano",
+          "value": "MENOR DE 1 ANO"
+        },
+        {
+          "label": "1 a 4",
+          "value": "01-04"
+        },
+        {
+          "label": "5 a 9",
+          "value": "05-09"
+        },
+        {
+          "label": "10 a 14",
+          "value": "10-14"
+        },
+        {
+          "label": "15 a 19",
+          "value": "15-19"
+        },
+        {
+          "label": "20 a 29",
+          "value": "20-29"
+        },
+        {
+          "label": "30 a 39",
+          "value": "30-39"
+        },
+        {
+          "label": "40 a 49",
+          "value": "40-49"
+        },
+        {
+          "label": "50 a 59",
+          "value": "50-59"
+        },
+        {
+          "label": "60 a 69",
+          "value": "60-69"
+        },
+        {
+          "label": "70 a 79",
+          "value": "70-79"
+        },
+        {
+          "label": "Maior de 80 anos",
+          "value": "MAIOR DE 80 ANOS"
+        }
+      ]
+    },
+    {
+      "id": "0C2YI",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "IDADE",
+      "label": "Idade",
+      "type": "number"
+    },
+    {
+      "id": "6M86K",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "MUNICIPIO_RESIDENCIA",
+      "label": "Município de residência",
+      "type": "select",
+      "options": [
+        {
+          "label": "Opcao 1",
+          "value": "Opcao 1"
+        },
+        {
+          "label": "Opcao 2",
+          "value": "Opcao 2"
+        },
+        {
+          "label": "Opcao 3",
+          "value": "Opcao 3"
+        },
+        {
+          "label": "Opcao 4",
+          "value": "Opcao 4"
+        },
+        {
+          "label": "Opcao 5",
+          "value": "Opcao 5"
+        },
+        {
+          "label": "Opcao 6",
+          "value": "Opcao 6"
+        }
+      ]
+    },
+    {
+      "id": "N9XX3",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "RACA_COR",
+      "label": "Raça/Cor",
+      "type": "select",
+      "options": [
+        {
+          "label": "Ignorado",
+          "value": "IGNORADO"
+        },
+        {
+          "label": "Amarelo",
+          "value": "AMARELO"
+        },
+        {
+          "label": "Branco",
+          "value": "BRANCO"
+        },
+        {
+          "label": "Indigena",
+          "value": "INDIGENA"
+        },
+        {
+          "label": "Pardo",
+          "value": "PARDO"
+        },
+        {
+          "label": "Preto",
+          "value": "PRETO"
+        }
+      ]
+    },
+    {
+      "id": "RWKHQ",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "SEXO",
+      "label": "Sexo",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "Masculino",
+          "value": "M"
+        },
+        {
+          "label": "Feminino",
+          "value": "F"
+        }
+      ]
+    },
+    {
+      "id": "IH00G",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "GESTANTE",
+      "label": "Gestante",
+      "type": "select",
+      "options": [
+        {
+          "label": "Sim",
+          "value": "S"
+        },
+        {
+          "label": "Não",
+          "value": "N"
+        },
+        {
+          "label": "Ignorado",
+          "value": "IGNORADO"
+        }
+      ]
+    },
+    {
+      "id": "W61HB",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "ESCOLARIDADE",
+      "label": "Anos que frequentou a escola",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "De 1 a 3 anos",
+          "value": "DE 1 A 3 ANOS"
+        },
+        {
+          "label": "De 4 a 7 anos",
+          "value": "04-07"
+        },
+        {
+          "label": "De 8 a 11 anos",
+          "value": "08-11"
+        },
+        {
+          "label": "De 12 a 14 anos",
+          "value": "12-14"
+        },
+        {
+          "label": "15 anos ou mais",
+          "value": "15 ANOS OU MAIS"
+        },
+        {
+          "label": "Ignorado",
+          "value": "IGNORADO"
+        },
+        {
+          "label": "Nenhuma",
+          "value": "NENHUMA"
+        }
+      ]
+    },
+    {
+      "id": "O1DWH",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "SITUACAO_ATUAL",
+      "label": "Desfechos associados ao tratamento",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "Cura",
+          "value": "CURA"
+        },
+        {
+          "label": "Abandono",
+          "value": "ABANDONO TRATAMENTO"
+        },
+        {
+          "label": "Resistencia",
+          "value": "RESISTENCIA"
+        },
+        {
+          "label": "Óbito NTB",
+          "value": "nonTBDeath"
+        },
+        {
+          "label": "Abandono primário",
+          "value": "ABANDONO TRATAMENTO"
+        },
+        {
+          "label": "Tranferencia para outro Estado/País",
+          "value": "TRANSFERENCIA"
+        },
+        {
+          "label": "Em tratamento ambulatorial",
+          "value": "EM TRATAMENTO AMBULATORIAL"
+        },
+        {
+          "label": "Em Tratamento Internado",
+          "value": "EM TRATAMENTO INTERNADO"
+        },
+        {
+          "label": "Falência/Resistência",
+          "value": "deathOrResistence"
+        },
+        {
+          "label": "Mudança de diagnóstico",
+          "value": "MUDANCA DE DIAGNOSTICO"
+        },
+        {
+          "label": "Faltoso",
+          "value": "absentee"
+        },
+        {
+          "label": "Mud Diag",
+          "value": "mudDiag"
+        },
+        {
+          "label": "Mud Esquema Intoler/Toxicidade",
+          "value": "mudDiag2"
+        },
+        {
+          "label": "Óbito TB",
+          "value": "TBDeath"
+        },
+        {
+          "label": "Sem informação",
+          "value": "SEM INFORMACAO"
+        }
+      ]
+    },
+    {
+      "id": "ANI7G",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "MUNICIPIO_ATENDIMENTO",
+      "label": "Município onde foi iniciado o tratamento",
+      "type": "select",
+      "options": [
+        {
+          "label": "Opcao 1",
+          "value": "Opcao 1"
+        },
+        {
+          "label": "Opcao 2",
+          "value": "Opcao 2"
+        },
+        {
+          "label": "Opcao 3",
+          "value": "Opcao 3"
+        },
+        {
+          "label": "Opcao 4",
+          "value": "Opcao 4"
+        },
+        {
+          "label": "Opcao 5",
+          "value": "Opcao 5"
+        },
+        {
+          "label": "Opcao 6",
+          "value": "Opcao 6"
+        }
+      ]
+    },
+    {
+      "id": "TFJJ3",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "CODIGO_TRATAMENTO_ANTERIOR",
+      "label": "Código do tratamento realizado anteriormente",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "Não tratou (caso novo)",
+          "value": 1
+        },
+        {
+          "label": "Sim, alta cura (recidiva)",
+          "value": 2
+        },
+        {
+          "label": "Sim, alta abandono (retratamento)",
+          "value": 3
+        },
+        {
+          "label": "Sim, alta abandono",
+          "value": "retreatmentAbandon"
+        },
+        {
+          "label": "Não sabe",
+          "value": 4
+        },
+        {
+          "label": "Tratamento anterior encerrado por resistência",
+          "value": 5
+        },
+        {
+          "label": "Em estudo",
+          "value": 6
+        },
+        {
+          "label": "Sem informação",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "id": "S7AOV",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "TEMPO_TRAMENTO_ANTERIOR",
+      "label": "Faz quanto tempo que realizou o tratamento",
+      "type": "text"
+    },
+    {
+      "id": "W53Q2",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "TOTCOMUNIC",
+      "label": "Total de pessoas que residem com o paciente",
+      "type": "text"
+    },
+    {
+      "id": "Z9Q1Y",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "COMUNICEXA",
+      "label": "Número de pessoas que residem com o paciente que compareceram para o exame",
+      "type": "text"
+    },
+    {
+      "id": "TCND0",
+      "formId": ["3MOQL", "ZU6C0"],
+      "name": "COMUNICDO",
+      "label": "Quantas pessoas que residem com o paciente adoeceram de tuberculose",
+      "type": "text"
+    },
+    {
+      "id": "IXCAF",
+      "formId": ["3MOQL"],
+      "name": "INSTITUTO_TRATAMENTO",
+      "label": "No caso do paciente ser institucionalizado",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "Albergue",
+          "value": "ALBERGUE"
+        },
+        {
+          "label": "Asilo",
+          "value": "ASILO"
+        },
+        {
+          "label": "Casa de Apoio/Recuperação",
+          "value": "CASA DE APOIO/RECUPERACAO"
+        },
+        {
+          "label": "Hosp. Psiqa",
+          "value": "HOSP. PSIQ"
+        },
+        {
+          "label": "Ignorado",
+          "value": "IGNORADO"
+        },
+        {
+          "label": "Instit. Penal",
+          "value": "INSTIT. PENAL"
+        },
+        {
+          "label": "N",
+          "value": "N"
+        },
+        {
+          "label": "Orfanato",
+          "value": "ORFANATO"
+        }
+      ]
+    },
+    {
+      "id": "GFH7I",
+      "formId": ["3MOQL"],
+      "name": "MUNICIPIO_TRATAMENTO",
+      "label": "Município que deu continuidade ao tratamento",
+      "type": "select",
+      "options": [
+        {
+          "label": "Opcao 1",
+          "value": "Opcao 1"
+        },
+        {
+          "label": "Opcao 2",
+          "value": "Opcao 2"
+        },
+        {
+          "label": "Opcao 3",
+          "value": "Opcao 3"
+        },
+        {
+          "label": "Opcao 4",
+          "value": "Opcao 4"
+        },
+        {
+          "label": "Opcao 5",
+          "value": "Opcao 5"
+        },
+        {
+          "label": "Opcao 6",
+          "value": "Opcao 6"
+        }
+      ]
+    },
+    {
+      "id": "TVJ20",
+      "formId": ["3MOQL"],
+      "name": "TIPO_CASO",
+      "label": "Tipo de caso deste paciente",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "Novo",
+          "value": "NOVO"
+        },
+        {
+          "label": "Recidiva",
+          "value": "RECIDIVA"
+        },
+        {
+          "label": "Retratamento Abandono",
+          "value": "RETRATAMENTO ABANDONO"
+        },
+        {
+          "label": "Retrat após falência/resistência",
+          "value": "RETRATAMENTO APOS FALENCIA/RESISTENCIA"
+        },
+        {
+          "label": "Retrat após mud esquema int/tox",
+          "value": "RETRATAMENTO APOS MUDANÇA DE ESQUEMA INT/TOX"
+        }
+      ]
+    },
+    {
+      "id": "XK7DN",
+      "formId": ["3MOQL"],
+      "name": "FORMA_CLINICA_1",
+      "label": "Forma clínica da TB",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "Pulmonar",
+          "value": "PULMONAR"
+        },
+        {
+          "label": "Pleural",
+          "value": "PLEURAL"
+        },
+        {
+          "label": "Ganglionar periférica",
+          "value": "GANGLIONAR PERIFERICA"
+        },
+        {
+          "label": "Meníngea",
+          "value": "MENINGEA"
+        },
+        {
+          "label": "Miliar",
+          "value": "MILIAR"
+        },
+        {
+          "label": "Oftálmica",
+          "value": "OFTALMICA"
+        },
+        {
+          "label": "Óssea",
+          "value": "OSSEA"
+        },
+        {
+          "label": "Múltiplos Órgãos",
+          "value": "MÚLTIPLOS ÓRGÃOS"
+        },
+        {
+          "label": "Vias Urinárias",
+          "value": "VIAS URINÁRIAS"
+        },
+        {
+          "label": "Genital",
+          "value": "GENITAL"
+        },
+        {
+          "label": "Intestinal",
+          "value": "INTESTINAL"
+        },
+        {
+          "label": "Laríngea",
+          "value": "LARINGEA"
+        },
+        {
+          "label": "Outras",
+          "value": "OUTRAS"
+        },
+        {
+          "label": "Pele",
+          "value": "PELE"
+        }
+      ]
+    },
+    {
+      "id": "N9YYE",
+      "formId": ["3MOQL"],
+      "name": "CLASSIFICACAO",
+      "label": "Classificação da TB",
+      "type": "select",
+      "options": [
+        {
+          "label": "Dissem",
+          "value": "DISSEM"
+        },
+        {
+          "label": "Ext",
+          "value": "EXT"
+        },
+        {
+          "label": "P+E",
+          "value": "P+E"
+        },
+        {
+          "label": "Pul",
+          "value": "PUL"
+        }
+      ]
+    },
+    {
+      "id": "2P7LT",
+      "formId": ["3MOQL"],
+      "name": "DESCOBERTA",
+      "label": "Forma de descoberta da TB",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "Demanda ambulatorial",
+          "value": "DEMANDA AMBULATORIAL"
+        },
+        {
+          "label": "Urgência / Emergência",
+          "value": "URGENCIA/EMERGENCIA"
+        },
+        {
+          "label": "Busca ativa em instituição",
+          "value": "BUSCA ATIVA EM INSTITUICAO"
+        },
+        {
+          "label": "Investigacao de contatos",
+          "value": "INVESTIGACAO DE CONTATOS"
+        },
+        {
+          "label": "Busca Ativa na Comunidade",
+          "value": "BUSCA ATIVA NA COMUNIDADE"
+        },
+        {
+          "label": "Descob. após Óbito",
+          "value": "DESCOB. APOS OBITO"
+        },
+        {
+          "label": "Elucidação Diagn. em Internação",
+          "value": "ELUCIDADCAO DIAGN. EM INTERNACAO"
+        },
+        {
+          "label": "S/inf",
+          "value": "S/INF"
+        }
+      ]
+    },
+    {
+      "id": "7QNDA",
+      "formId": ["3MOQL"],
+      "name": "TIPO_TRATAMENTO",
+      "label": "Tipo de tratamento",
+      "type": "select",
+      "options": [
+        {
+          "label": "Supervisionado",
+          "value": "SUPERVISIONADO"
+        },
+        {
+          "label": "Auto-administrado",
+          "value": "AUTO-ADMINISTRADO"
+        },
+        {
+          "label": "S/inf",
+          "value": "S/INF"
+        }
+      ]
+    },
+    {
+      "id": "ADLTR",
+      "formId": ["3MOQL"],
+      "name": "BACILOSCOPIA_ESCARRO",
+      "label": "Baciloscopia",
+      "type": "select",
+      "options": [
+        {
+          "label": "Positivo",
+          "value": "POS"
+        },
+        {
+          "label": "Negativo",
+          "value": "NEG"
+        },
+        {
+          "label": "Andamento",
+          "value": "AND"
+        },
+        {
+          "label": "Não reliazado",
+          "value": "N/REALIZ"
+        },
+        {
+          "label": "S/inf",
+          "value": "S/INF"
+        }
+      ]
+    },
+    {
+      "id": "7C333",
+      "name": "BACILOSCOPIA_OUTRO_MATERIAL",
+      "formId": ["3MOQL"],
+      "label": "Baciloscopia de outro material",
+      "type": "select",
+      "options": [
+        {
+          "label": "Positivo",
+          "value": "POS"
+        },
+        {
+          "label": "Negativo",
+          "value": "NEG"
+        },
+        {
+          "label": "Andamento",
+          "value": "AND"
+        },
+        {
+          "label": "Não reliazado",
+          "value": "N/REALIZ"
+        },
+        {
+          "label": "S/inf",
+          "value": "S/INF"
+        }
+      ]
+    },
+    {
+      "id": "A3Z7P",
+      "formId": ["3MOQL"],
+      "name": "CULTURA_ESCARRO",
+      "label": "Cultura de escarro",
+      "type": "select",
+      "options": [
+        {
+          "label": "Positivo",
+          "value": "POS"
+        },
+        {
+          "label": "Negativo",
+          "value": "NEG"
+        },
+        {
+          "label": "Andamento",
+          "value": "AND"
+        },
+        {
+          "label": "Não reliazado",
+          "value": "N/REALIZ"
+        },
+        {
+          "label": "S/inf",
+          "value": "S/INF"
+        }
+      ]
+    },
+    {
+      "id": "GUTW1",
+      "formId": ["3MOQL"],
+      "name": "CULTURA_OUTRO_MATERIAL",
+      "label": "Cultura de outro material",
+      "type": "select",
+      "options": [
+        {
+          "label": "Positivo",
+          "value": "POS"
+        },
+        {
+          "label": "Negativo",
+          "value": "NEG"
+        },
+        {
+          "label": "Andamento",
+          "value": "AND"
+        },
+        {
+          "label": "Não reliazado",
+          "value": "N/REALIZ"
+        },
+        {
+          "label": "S/inf",
+          "value": "S/INF"
+        }
+      ]
+    },
+    {
+      "id": "15G96",
+      "formId": ["3MOQL"],
+      "name": "RX_TORAX",
+      "label": "Raio X do tórax",
+      "type": "select",
+      "options": [
+        {
+          "label": "Normal",
+          "value": "NORMAL"
+        },
+        {
+          "label": "Positivo",
+          "value": "POS"
+        },
+        {
+          "label": "Não reliazado",
+          "value": "N/REALIZ"
+        },
+        {
+          "label": "Outra Patologia",
+          "value": "OUTRA PATOLOGIA"
+        },
+        {
+          "label": "Susp c/cavid",
+          "value": "SUSP C/CAVID"
+        },
+        {
+          "label": "S/inf",
+          "value": "S/INF"
+        },
+        {
+          "label": "Susp TB",
+          "value": "SUSP TB"
+        }
+      ]
+    },
+    {
+      "id": "CMVQI",
+      "formId": ["3MOQL"],
+      "name": "RX_OUTRO",
+      "label": "Raio X de outra parte do corpo",
+      "type": "select",
+      "options": [
+        {
+          "label": "Normal",
+          "value": "NORMAL"
+        },
+        {
+          "label": "Positivo",
+          "value": "POS"
+        },
+        {
+          "label": "Não reliazado",
+          "value": "N/REALIZ"
+        },
+        {
+          "label": "Outra Patologia",
+          "value": "OUTRA PATOLOGIA"
+        },
+        {
+          "label": "Susp c/cavid",
+          "value": "SUSP C/CAVID"
+        },
+        {
+          "label": "S/inf",
+          "value": "S/INF"
+        },
+        {
+          "label": "Susp TB",
+          "value": "SUSP TB"
+        }
+      ]
+    },
+    {
+      "id": "09VFS",
+      "formId": ["3MOQL"],
+      "name": "NECROPSIA",
+      "label": "Resultado da necrópsia",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "N/realiz",
+          "value": "N/REALIZ"
+        },
+        {
+          "label": "Sugestivo TB",
+          "value": "SUGESTIVO TB"
+        },
+        {
+          "label": "S/inf",
+          "value": "S/INF"
+        },
+        {
+          "label": "BAAR pos",
+          "value": "BAAR POS"
+        },
+        {
+          "label": "Outra Patologia",
+          "value": "OUTRA PATOLOGIA"
+        }
+      ]
+    },
+    {
+      "id": "WFRPJ",
+      "formId": ["3MOQL"],
+      "name": "HIV",
+      "label": "Teste de HIV",
+      "type": "radio",
+      "options": [
+        {
+          "label": "Sim",
+          "value": true
+        },
+        {
+          "label": "Não",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "YP4AP",
+      "formId": ["3MOQL"],
+      "name": "DIABETES",
+      "label": "Se há Diabetes",
+      "type": "radio",
+      "options": [
+        {
+          "label": "Sim",
+          "value": true
+        },
+        {
+          "label": "Não",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "KQQB0",
+      "formId": ["3MOQL"],
+      "name": "ALCOOLISMO",
+      "label": "Se há alcoolismo",
+      "type": "radio",
+      "options": [
+        {
+          "label": "Sim",
+          "value": true
+        },
+        {
+          "label": "Não",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "CSS1D",
+      "formId": ["3MOQL"],
+      "name": "USO_DROGAS",
+      "label": "Se há uso de drogas",
+      "type": "radio",
+      "options": [
+        {
+          "label": "Sim",
+          "value": true
+        },
+        {
+          "label": "Não",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "NH4BF",
+      "formId": ["3MOQL"],
+      "name": "TABAGISMO",
+      "label": "Se há tabagismo",
+      "type": "radio",
+      "options": [
+        {
+          "label": "Sim",
+          "value": true
+        },
+        {
+          "label": "Não",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "QUXLG",
+      "formId": ["3MOQL"],
+      "name": "OUTRAS_DOENCAS_IMUNO",
+      "label": "Se há presença de outras doenças imunológicas",
+      "type": "radio",
+      "options": [
+        {
+          "label": "Sim",
+          "value": true
+        },
+        {
+          "label": "Não",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "E51XY",
+      "formId": ["3MOQL"],
+      "name": "AIDS",
+      "label": "Teste de Aids",
+      "type": "radio",
+      "options": [
+        {
+          "label": "Sim",
+          "value": true
+        },
+        {
+          "label": "Não",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "VULL7",
+      "formId": ["3MOQL"],
+      "name": "DOENCA_MENTAL",
+      "label": "Se há alguma doença mental",
+      "type": "radio",
+      "options": [
+        {
+          "label": "Sim",
+          "value": true
+        },
+        {
+          "label": "Não",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "2OLOF",
+      "formId": ["3MOQL"],
+      "name": "TESTE_SENSIBILIDADE",
+      "label": "Teste de sensibilidade",
+      "type": "select",
+      "options": [
+        {
+          "label": "Sim",
+          "value": true
+        },
+        {
+          "label": "Não",
+          "value": false
+        },
+        {
+          "label": "Sem informação",
+          "value": "S/INF"
+        }
+      ]
+    },
+    {
+      "id": "C1244",
+      "formId": ["3MOQL"],
+      "name": "ESQUEMA_INICIAL",
+      "label": "Esquema medicamentoso incial",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "MR",
+          "value": "MR"
+        },
+        {
+          "label": "Outros",
+          "value": "OUTROS"
+        },
+        {
+          "label": "Rhz",
+          "value": "RHZ"
+        },
+        {
+          "label": "RHZE",
+          "value": "RHZE"
+        },
+        {
+          "label": "SZEET",
+          "value": "SZEET"
+        }
+      ]
+    },
+    {
+      "id": "S8U2S",
+      "formId": ["3MOQL"],
+      "name": "MUDANCA_ESQUEMA",
+      "label": "Se houve mudança no esquema ",
+      "type": "radio",
+      "options": [
+        {
+          "label": "Sim",
+          "value": true
+        },
+        {
+          "label": "Não",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "4IZJF",
+      "formId": ["3MOQL"],
+      "name": "ESQUEMA_ATUAL",
+      "label": "Esquema medicamentoso atual",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "MR",
+          "value": "MR"
+        },
+        {
+          "label": "Outros",
+          "value": "OUTROS"
+        },
+        {
+          "label": "Rhz",
+          "value": "RHZ"
+        },
+        {
+          "label": "RHZE",
+          "value": "RHZE"
+        },
+        {
+          "label": "SZEET",
+          "value": "SZEET"
+        }
+      ]
+    },
+    {
+      "id": "44U22",
+      "formId": ["3MOQL"],
+      "name": "MOTIVO_MUDANCA_ESQUEMA",
+      "label": "Principal motivo",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "Intolerância/Toxicidade",
+          "value": "INTOLERANCIA/TOXICIDADE"
+        },
+        {
+          "label": "Outro Motivo",
+          "value": "OUTRO MOTIVO"
+        },
+        {
+          "label": "Resistência Medicamentosa",
+          "value": "RESISTENCIA MEDICAMENTOSA"
+        }
+      ]
+    },
+    {
+      "id": "CNS9I",
+      "formId": ["3MOQL"],
+      "name": "RESISTENCIA",
+      "label": "Verificação da resistência",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "AND",
+          "value": "AND"
+        },
+        {
+          "label": "SENS",
+          "value": "SENS"
+        },
+        {
+          "label": "TB MR",
+          "value": "TB MR"
+        },
+        {
+          "label": "TB R",
+          "value": "TB R"
+        }
+      ]
+    },
+    {
+      "id": "GEZPR",
+      "formId": ["3MOQL"],
+      "name": "HISTOPATOLOGIA",
+      "label": "Resultado do teste histopatológico",
+      "type": "select",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "N/realiz",
+          "value": "N/REALIZ"
+        },
+        {
+          "label": "Sugestivo TB",
+          "value": "SUGESTIVO TB"
+        },
+        {
+          "label": "S/inf",
+          "value": "S/INF"
+        },
+        {
+          "label": "BAAR pos",
+          "value": "BAAR POS"
+        },
+        {
+          "label": "Outra Patologia",
+          "value": "OUTRA PATOLOGIA"
+        }
+      ]
+    },
+    {
+      "id": "JKTB9",
+      "formId": ["3MOQL"],
+      "name": "NRO_DOSES_PRI",
+      "label": "Número de doses até o 2º mês do medicamento",
+      "type": "text"
+    },
+    {
+      "id": "CND2Z",
+      "formId": ["3MOQL"],
+      "name": "NRO_DOSES_SEG",
+      "label": "Número de doses do 3º ao 6º mês do medicamento",
+      "type": "text"
+    },
+    {
+      "id": "RMSMH",
+      "name": "MOTIVO_INTERNACAO_1",
+      "formId": ["3MOQL"],
+      "label": "No caso de haver mudança, qual o motivo",
+      "type": "select",
+      "options": [
+        {
+          "label": "Elucidacao diagnostica",
+          "value": "ELUCIDACAO DIAGNOSTICA"
+        },
+        {
+          "label": "Insuficiencia respiratoria aguda",
+          "value": "INSUFICIENCIA RESPIRATORIA AGUDA"
+        },
+        {
+          "label": "Outros",
+          "value": "OUTROS"
+        },
+        {
+          "label": "Causas sociais",
+          "value": "CAUSAS SOCIAIS"
+        },
+        {
+          "label": "Aids",
+          "value": "AIDS"
+        },
+        {
+          "label": "Caquexia",
+          "value": "CAQUEXIA"
+        },
+        {
+          "label": "Hemoptise",
+          "value": "HEMOPTISE"
+        },
+        {
+          "label": "S/inf",
+          "value": "S/INF"
+        },
+        {
+          "label": "Não adesão ao tratamento",
+          "value": "NAO ADESAO AO TRATAMENTO"
+        },
+        {
+          "label": "Meningite",
+          "value": "MENINGITE"
+        },
+        {
+          "label": "Intolerancia medicamentosa",
+          "value": "INTOLERANCIA MEDICAMENTOSA"
+        },
+        {
+          "label": "TB miliar",
+          "value": "TB MILIAR"
+        },
+        {
+          "label": "Absecesso",
+          "value": "ABSCESSO"
+        },
+        {
+          "label": "Diabetes",
+          "value": "DIABETES"
+        },
+        {
+          "label": "Alta para tratamento ambulatorial",
+          "value": "ALTA PARA TRATAMENTO AMBULATORIAL"
+        }
+      ]
+    },
+    {
+      "id": "7S5FH",
+      "formId": ["3MOQL"],
+      "name": "TIPO_SAIDA_1",
+      "label": "Qual o tipo de saída referente a primeira internação",
+      "type": "select",
+      "options": [
+        {
+          "label": "Alta para tratamento ambulatorial",
+          "value": "ALTA PARA TRATAMENTO AMBULATORIAL"
+        },
+        {
+          "label": "Obito por outra causa",
+          "value": "OBITO POR OUTRA COISA"
+        },
+        {
+          "label": "Obito por TB",
+          "value": "OBITO POR TB"
+        },
+        {
+          "label": "Cura",
+          "value": "CURA"
+        },
+        {
+          "label": "Transferencia para outro hospital",
+          "value": "TRANSFERENCIA PARA OUTRO HOSPITAL"
+        },
+        {
+          "label": "Evadiu-se",
+          "value": "EVADIU-SE"
+        },
+        {
+          "label": "A pedido",
+          "value": "A PEDIDO"
+        },
+        {
+          "label": "S/inf",
+          "value": "S/INF"
+        },
+        {
+          "label": "Mud Diag",
+          "value": "MUD DIAG"
+        },
+        {
+          "label": "Disciplinar",
+          "value": "DISCIPLINAR"
+        }
+      ]
+    }
+  ],
+
+  "forms": [
+    {
+      "id": "3MOQL",
+      "algorithmId": "5c20da4b-f6e7-460e-87b3-05956fcdbc10",
+      "name": "Formulario Total desfecho 1 (teste)",
+      "inputs": [
+        "VC9JH",
+        "J3O6A",
+        "9IB25",
+        "0C2YI",
+        "6M86K",
+        "N9XX3",
+        "RWKHQ",
+        "IH00G",
+        "W61HB",
+        "O1DWH",
+        "ANI7G",
+        "TFJJ3",
+        "S7AOV",
+        "W53Q2",
+        "Z9Q1Y",
+        "TCND0",
+        "IXCAF",
+        "GFH7I",
+        "TVJ20",
+        "XK7DN",
+        "N9YYE",
+        "2P7LT",
+        "7QNDA",
+        "ADLTR",
+        "7C333",
+        "A3Z7P",
+        "GUTW1",
+        "15G96",
+        "CMVQI",
+        "09VFS",
+        "WFRPJ",
+        "YP4AP",
+        "KQQB0",
+        "CSS1D",
+        "NH4BF",
+        "QUXLG",
+        "E51XY",
+        "VULL7",
+        "2OLOF",
+        "C1244",
+        "S8U2S",
+        "4IZJF",
+        "44U22",
+        "CNS9I",
+        "GEZPR",
+        "JKTB9",
+        "CND2Z",
+        "RMSMH",
+        "7S5FH"
+      ]
+    },
+    {
+      "id": "ZU6C0",
+      "algorithmId": "5c20da4b-f6e7-460e-87b3-05956fcdbc10",
+      "name": "Formulario passo 1 Desfechos (teste)",
+      "inputs": [
+        "VC9JH",
+        "J3O6A",
+        "9IB25",
+        "0C2YI",
+        "6M86K",
+        "N9XX3",
+        "RWKHQ",
+        "IH00G",
+        "W61HB",
+        "O1DWH",
+        "ANI7G",
+        "TFJJ3",
+        "S7AOV",
+        "W53Q2"
+      ]
+    }
+  ]
 }
