@@ -2127,8 +2127,23 @@
 
   "algorithm": [
     {
-      "name": "Desfechos",
+      "name": "Outcomes",
       "form": "3MOQL",
+      "createdAt": "18/ 08/2022"
+    },
+    {
+      "name": "Tuberculosis with resistant bacteria",
+      "form": "4C6JJ",
+      "createdAt": "18/08/2022"
+    },
+    {
+      "name": "Primary abandon",
+      "form": "TQGXD",
+      "createdAt": "18/08/2022"
+    },
+    {
+      "name": "Return from abandon",
+      "form": "WXUJ9",
       "createdAt": "18/08/2022"
     }
   ],
