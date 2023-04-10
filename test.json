@@ -1,0 +1,32 @@
+{
+  "algorithm": [
+    {
+      "id": "3MOQL",
+      "name": "Outcomes",
+      "form": "3MOQL",
+      "createdAt": "18/ 08/2022",
+      "active": true
+    },
+    {
+      "id": "HU29L",
+      "name": "Tuberculosis with resistant bacteria",
+      "form": "4C6JJ",
+      "createdAt": "18/08/2022",
+      "active": false
+    },
+    {
+      "id": "FM3LU",
+      "name": "Primary abandon",
+      "form": "TQGXD",
+      "createdAt": "18/08/2022",
+      "active": false
+    },
+    {
+      "id": "9CE3D",
+      "name": "Return from abandon",
+      "form": "WXUJ9",
+      "createdAt": "18/08/2022",
+      "active": false
+    }
+  ]
+}
